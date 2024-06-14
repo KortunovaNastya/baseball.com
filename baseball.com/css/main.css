@@ -1,0 +1,209 @@
+.html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    font-family: 'Stalinist One', sans-serif;
+    background-color: #040F0F;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url("/Images/pole2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.wrapper{
+    margin: 0;
+}
+
+.conteiner {
+    margin: 0px 10%;
+}
+
+.number {
+    height: 150px;
+    padding-top: 20px;
+    background: #040F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-email{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Stalinist One';
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    background: #393C70;
+    opacity: 90%;
+}
+.img-emblema{
+    height: 200px;
+    width: 200px;
+    border-radius: 36px;
+}
+
+.nav {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    .nv-it{
+        margin-left: 30px;
+        font-family: 'Stalinist One';
+    }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+}
+
+.baseball{
+    float: left;
+    margin-left: 156px;
+    margin-top: 270px;
+    
+    
+    .baseball-description{
+        line-height:0.9em;
+        color: white;
+        font-size: 17px;
+    }
+    .baseball-title {
+        line-height: 0.3em;
+        color: white;
+        font-size: 96px;
+    }
+}
+.btn {
+    margin-top: 18px;
+    margin-left: 120px;
+    font-size: 20px;
+    background-color: #393C70;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: 'Stalinist One';
+}
+
+
+.page-dark{
+    background-color: #040F0F;
+    display: flex;
+    justify-content: space-around;
+}
+.title-h2{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 64px;
+    margin-top: 150px;
+    font-family: 'Stalinist One';
+}
+.photo-clb{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.clubs-photo{
+    padding-left: 30px;
+    text-align: center;
+}
+.name-clb{
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+.btn2{
+    font-size: 20px;
+    background-color: #393C70;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Stalinist One';
+}
+
+.container {
+    margin-bottom: 250px;
+}
+.container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.container .image-container .img
+{
+    width: 450px;
+    height: 450px;
+    border: 10px solid white;
+    overflow: hidden;
+}
+.container .image-container .img
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    cursor: pointer;
+    transition: .5s;
+}
+.container .image-container
+.img:hover img {
+    transform: scale(1.1);
+
+}
+
+.container .pop-up {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.container .pop-up  img {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 8px; ;
+    width: 700px;
+}
+
+.container .pop-up span {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}

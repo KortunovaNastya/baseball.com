@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Федерация бейсбола и софтбола Санкт-Петербурга</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="number">
+            <a href="#" class="number-email">
+                +7 (911) 213-55-25   /   baseball_spb@mail.ru  
+            </a>
+        </div>
+        <div class="header-line">
+            <div  class="conteiner">
+                <div class="nav">
+                    <img class="img-emblema" src="css/Images/emblema.jpg">
+                    <ul class="nav-item">
+                        <li class="nv-it"><a href="index.html" class="nav-link">ГЛАВНАЯ</a> </li>
+                        <li class="nv-it"><a href="novosty.html" class="nav-link">НОВОСТИ</a></li>
+                        <li class="nv-it"><a href="federacia.html" class="nav-link">ФЕДЕРАЦИЯ</a></li>
+                        <li class="nv-it"><a href="teams.html" class="nav-link">КОМАНДЫ</a></li>
+                        <li class="nv-it"><a href="media.html" class="nav-link">МЕДИА</a></li>
+                        <li class="nv-it"><a href="rules.html" class="nav-link">ПРАВИЛА</a></li>
+                    </ul>
+                </div>               
+            </div>
+        </div>
+        <div class="baseball">
+        
+                <p class="baseball-description">ВЫ ЧИТАЕТЕ О -</p>
+                <h1 class="baseball-title">BASE</h1>
+                <h1 class="baseball-title">BALL</h1>
+                <p class="baseball-description">ФЕДЕРАЦИЯ САНКТ-ПЕТЕБУРГА</p> 
+                <p class="baseball-description">ПО БЕЙСБОЛУ И СОФТБОЛУ</p>
+                <button class="btn" href="index.html">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+        
+    </div>
+        </div>
+    <div>
+    <h2 class="title-h2">СПОРТШКОЛЫ И КЛУБЫ</h2>
+    <div class="page-dark">
+            
+            <div class="clubs-photo">
+                <img class="photo-clb" src="/css/Images/cropped-NASH-LOGO-1.jpg">
+                <div class="name-clb">СШ "ВЫБОРЖАНИН"</div>
+                <button class="btn2" href="teams.html">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+
+            <div class="clubs-photo">
+                <img class="photo-clb" src="/css/Images/sz.jpg">
+                <div class="name-clb">Северные звезды</div>
+                <button class="btn2" href="teams.html">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+                
+            <div class="clubs-photo">
+                <img class="photo-clb" src="/css/Images/reebels.jpg">
+                
+                    <div class="name-clb">Бунтари</div>
+               
+                <button class="btn2" href="teams.html">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+
+            <div class="clubs-photo">
+                <img class="photo-clb" src="/css/Images/nevGrifons.jpg">
+               
+                    <div class="name-clb">Грифоны</div>
+               
+                <button class="btn2" href="teams.html">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title-h2"> Медиа</h1>
+
+        <div class="image-container">
+
+            <div class="img">
+                <img src="Images/team-photo1.jpg">
+            </div>
+            <div class="img">
+                <img src="Images/team-photo2.jpg">
+            </div>
+            <div class="img">
+                <img src="Images/team-photo3.jpg">
+            </div>
+            <div class="img">
+                <img src="Images/team-photo4.jpg">
+            </div>
+            
+    </div>
+    </div>
+    <script>
+        document.querySelectorAll('.img-container img').forEach(img => {
+    img.onClick = () => {
+        document.querySelector('.pop-up').computedStyleMap.display = 'block';
+        document.querySelector('.pop-up img ').src = img.getAttribute('src');
+    }
+});
+    document.querySelector('.pop-up span').onClick = () => {
+        document.querySelector('.pop-up').computedStyleMap.display = 'none';
+    }
+
+    </script>
+    </header>
+   
+</body>
+</html>
